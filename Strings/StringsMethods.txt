@@ -1,0 +1,112 @@
+Basic String Methods
+
+--charAt(index)
+
+Returns the character at the specified index in the string.
+Example: "hello".charAt(1) returns "e".
+
+--charCodeAt(index)
+
+Returns the Unicode value (ASCII code) of the character at the specified index.
+Example: "hello".charCodeAt(1) returns 101 (Unicode value of "e").
+
+--concat(str1, str2, ...)
+
+Combines two or more strings and returns a new string.
+Example: "hello".concat(" ", "world") returns "hello world".
+
+--indexOf(searchValue, startIndex)
+
+Returns the index of the first occurrence of searchValue in the string, starting from startIndex.
+Example: "hello".indexOf("l") returns 2.
+
+--lastIndexOf(searchValue, startIndex)
+
+Returns the index of the last occurrence of searchValue in the string, starting from startIndex backwards.
+Example: "hello world".lastIndexOf("o") returns 7.
+
+--slice(startIndex, endIndex)
+
+Extracts a section of the string and returns a new string from startIndex to endIndex (endIndex is optional).
+Example: "hello".slice(1, 4) returns "ell".
+
+--substring(startIndex, endIndex)
+
+Similar to slice(), but substring() does not accept negative indexes and swaps them if startIndex > endIndex.
+Example: "hello".substring(1, 4) returns "ell".
+
+--substr(startIndex, length)
+
+Extracts a substring starting from startIndex and of length characters.
+Example: "hello".substr(1, 3) returns "ell".
+
+--toLowerCase()
+
+Converts all characters in the string to lowercase.
+Example: "HeLLo".toLowerCase() returns "hello".
+
+--toUpperCase()
+
+Converts all characters in the string to uppercase.
+Example: "HeLLo".toUpperCase() returns "HELLO".
+
+--trim()
+
+Removes whitespace from both ends of the string.
+Example: " hello ".trim() returns "hello".
+
+
+Searching and Matching Methods
+
+--startsWith(searchString, position)
+
+Checks if the string starts with searchString optionally starting the search from position.
+Example: "hello".startsWith("he") returns true.
+
+--endsWith(searchString, length)
+
+Checks if the string ends with searchString optionally limiting the search to length characters.
+Example: "hello".endsWith("lo") returns true.
+
+--includes(searchString, position)
+
+Checks if the string contains searchString, optionally starting from position.
+Example: "hello".includes("ell") returns true.
+
+--match(regexp)
+
+Searches the string for matches against a regular expression regexp and returns an array of matches.
+Example: "hello".match(/[a-e]/g) returns ["h", "e", "e"].
+
+--search(regexp)
+
+Searches the string for matches against a regular expression regexp and returns the index of the first match.
+Example: "hello".search(/l+/) returns 2.
+
+--replace(searchValue, newValue)
+
+Replaces occurrences of searchValue with newValue in the string and returns a new string.
+Example: "hello".replace("l", "L") returns "heLLo".
+
+Splitting and Joining Methods
+--split(separator, limit)
+
+Splits the string into an array of substrings using separator, optionally limiting the number of splits to limit.
+Example: "hello world".split(" ") returns ["hello", "world"].
+
+--join(separator)
+
+Joins elements of an array into a string, inserting separator between each element.
+Example: ["hello", "world"].join(" ") returns "hello world".
+
+Miscellaneous Methods
+--repeat(count)
+
+Returns a new string repeated count times.
+Example: "hello".repeat(3) returns "hellohellohello".
+
+--localeCompare(compareString)
+
+Compares two strings in the current locale and returns -1, 0, or 1 depending on whether the string is less than, equal to, or greater than compareString.
+
+Example: "a".localeCompare("b") returns -1.
