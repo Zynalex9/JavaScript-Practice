@@ -12,3 +12,15 @@ let formattedDateString = [
 ];
 console.log(dateArray);
 console.log(formattedDateString);
+// Write a function parseTime(timeString) that takes in a time string in the format "HH:MM:SS" and returns an object { hours: HH, minutes: MM, seconds: SS }. Use the split method to achieve this.
+function timeString(string) {
+  let timeArray = string.split(":");
+  let [haveHours, haveMinutes, haveSeconds] = timeArray;
+  return {
+    hours: parseInt(haveHours),
+    minutes: parseInt(haveMinutes),
+    seconds: parseInt(haveSeconds),
+  };
+}
+const timeStr = "12:55:20";
+console.log(timeString(timeStr));
