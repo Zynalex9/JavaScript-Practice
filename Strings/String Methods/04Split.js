@@ -24,3 +24,10 @@ function timeString(string) {
 }
 const timeStr = "12:55:20";
 console.log(timeString(timeStr));
+//Create a function `splitAndMerge(str)` that splits a string `str` into individual characters, sorts them alphabetically, and then joins them back into a string.
+function splitAndMerge(str) {
+  let splitStr = str.split("").sort().join("");
+  console.log(splitStr);
+}
+let str = "DCBA";
+splitAndMerge(str);
