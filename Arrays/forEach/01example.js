@@ -1,3 +1,4 @@
+// Program: Calculate the sum of array elements
 let numbers = [1, 2, 3, 4, 5];
 let sum = 0;
 
